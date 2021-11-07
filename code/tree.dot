@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="GoogleAnalytics_PageValue <= 0.71\nfriedman_mse = 0.13\nsamples = 6969\nvalue = -0.0", fillcolor="#fae6d8"] ;
+1 [label="Month_Access <= 6.5\nfriedman_mse = 0.04\nsamples = 5434\nvalue = -0.12", fillcolor="#fae9dc"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Avg_AccountMng_Duration <= 24.13\nfriedman_mse = 0.0\nsamples = 2647\nvalue = -0.15", fillcolor="#fbe9dd"] ;
+1 -> 2 ;
+3 [label="friedman_mse = 0.0\nsamples = 2180\nvalue = -1.18", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="friedman_mse = 0.01\nsamples = 467\nvalue = -1.1", fillcolor="#fffdfc"] ;
+2 -> 4 ;
+5 [label="Product_Pages <= 57.5\nfriedman_mse = 0.07\nsamples = 2787\nvalue = -0.08", fillcolor="#fae8db"] ;
+1 -> 5 ;
+6 [label="friedman_mse = 0.06\nsamples = 2376\nvalue = -0.72", fillcolor="#fdf5f0"] ;
+5 -> 6 ;
+7 [label="friedman_mse = 0.13\nsamples = 411\nvalue = 0.02", fillcolor="#fae6d7"] ;
+5 -> 7 ;
+8 [label="GoogleAnalytics_PageValue <= 30.16\nfriedman_mse = 0.25\nsamples = 1535\nvalue = 0.41", fillcolor="#f8deca"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Total_Pages <= 40.5\nfriedman_mse = 0.25\nsamples = 1059\nvalue = 0.31", fillcolor="#f9e0ce"] ;
+8 -> 9 ;
+10 [label="friedman_mse = 0.24\nsamples = 435\nvalue = 3.29", fillcolor="#eca16c"] ;
+9 -> 10 ;
+11 [label="friedman_mse = 0.24\nsamples = 624\nvalue = 1.74", fillcolor="#f2c29f"] ;
+9 -> 11 ;
+12 [label="friedman_mse = 0.17\nsamples = 476\nvalue = 4.82", fillcolor="#e58139"] ;
+8 -> 12 ;
+}
